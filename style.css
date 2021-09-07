@@ -1,0 +1,99 @@
+:root {
+  --color-pink: rgb(254, 32, 92);
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+}
+
+body {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.grid {
+  height: 50rem;
+  width: 50rem;
+  margin: auto;
+  border: 5px solid var(--color-pink);
+  box-shadow: 10px 10px 1px 0px var(--color-black);
+  display: grid;
+}
+
+.btn {
+  font-family: 'Press Start 2P', cursive;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  background-color: var(--color-black);
+  color: white;
+  border: 2px solid var(--color-black);
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 2px solid var(--color-pink);
+}
+
+.active {
+  background: var(--color-pink);
+  color: black;
+}
+
+.slider__size {
+  margin-bottom: 1rem;
+}
+
+.p__size {
+  font-size: 1.5rem;
+}
+
+input[type='range'] {
+  height: 3.8rem;
+  width: 50rem;
+  -webkit-appearance: none;
+  margin: 1rem 0;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  height: 1rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px var(--color-black);
+  background: var(--color-pink);
+  border: 1px solid var(--color-black);
+}
+
+input[type='range']::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px var(--color-black);
+  border: 1px solid var(--color-black);
+  height: 2.5rem;
+  width: 2.5rem;
+  background: var(--color-white);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -9px;
+}
+
+.footer {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
+
+.github {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.github:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+}

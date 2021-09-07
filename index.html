@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Etch-A-Sketch</h1>
+    <div class="buttons">
+      <button class="btn btn__black active" data-color="black">Black</button>
+      <button class="btn btn__rainbow" data-color="rainbow">Rainbow</button>
+      <button class="btn btn__eraser" data-color="eraser">Eraser</button>
+      <button class="btn btn__refresh">Refresh</button>
+    </div>
+    <div class="slider__size">
+      <p class="p__size">
+        Current grid size is: <span class="span__size">16 x 16</span>
+      </p>
+      <input
+        type="range"
+        name="slider"
+        class="slider"
+        min="5"
+        max="64"
+        value="16"
+      />
+    </div>
+    <div class="grid"></div>
+
+    <div class="footer">
+      <p>
+        Copyright © Kire Zdraveski
+        <a
+          href="https://github.com/kire21?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-github github"></i
+        ></a>
+      </p>
+    </div>
+
+    <script src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/198b8517c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
